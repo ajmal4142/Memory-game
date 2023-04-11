@@ -1,0 +1,27 @@
+
+.navbar-brand{
+    color: aliceblue;
+}
+
+.nav-link {
+    width: 90px;
+    color: aliceblue;
+}
+
+#movesContainer{
+    background-color: rgb(97, 108, 235);
+    width: 300px;
+    height: 100px;
+    border: 2px inset green;
+    color: white;
+}
+
+.moves h1 , h3 {
+    text-align: center;
+}
+
+#grids{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
