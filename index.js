@@ -52,7 +52,7 @@ console.log(obj);
 obj.sort(() => 0.5 - Math.random());
 const cards = document.querySelector("#grids");
 let moves = 0;
-let remaining = 12;
+let remaining = 20;
 let points = 0;
 let currentMove = document.getElementById("move");
 let totalPoints = document.getElementById("point");
@@ -104,7 +104,7 @@ function flipCard() {
   currentMove.innerHTML = moves;
 
   remainingMove.innerHTML = remaining;
-  if (moves === 12 && points !== 6) {
+  if (moves === 20 && points !== 6) {
     alert("You failed.. Want to play again?..");
     setTimeout(myGreeting, 3000);
   }
@@ -137,13 +137,4 @@ function myGreeting() {
   location.reload();
 }
 
-function checkWinner() {
-  if (points === 6) {
-    alert("Great job");
-    console.log("donee");
-  } else if (moves === 12) {
-    console.log("done");
-    alert("You loose");
-    setTimeout(myGreeting, 3000);
-  }
-}
+
